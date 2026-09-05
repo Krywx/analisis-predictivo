@@ -32,3 +32,21 @@ Cómo ejecutar
 Clonar el repositorio.
 Instalar dependencias: pip install pandas numpy scikit-learn matplotlib seaborn joblib
 Abrir notebook.ipynb en Jupyter o Google Colab y ejecutar las celdas en orden.
+Nota sobre las advertencias (warnings) visibles en el notebook
+
+Al revisar el notebook renderizado en GitHub, es posible ver algunos recuadros en rosado dentro de las celdas de código. Estas son advertencias (warnings) de las librerías, no errores — el código se ejecuta y produce resultados correctamente en ambos casos. Se dejaron visibles de forma intencional para mostrar la ejecución real del proceso, sin editar el output:
+
+DtypeWarning (pandas): aparece al cargar el CSV porque algunas columnas contienen tipos de datos mixtos (por ejemplo, números y texto en la misma columna). Pandas igual carga el archivo correctamente; esta advertencia solo sugiere especificar el tipo de dato explícitamente para optimizar la lectura.
+FutureWarning (seaborn): indica que un parámetro usado en una visualización (ci) será reemplazado por otro (errorbar) en versiones futuras de la librería. El gráfico se genera igual con el parámetro actual.
+
+Ninguna de estas advertencias afecta los resultados del análisis ni del modelo.
+
+Contenido
+
+PDF
+
+PDF
+
+CS Proyecto Machine pt2 (1).ipynb
+
+IPYNB
